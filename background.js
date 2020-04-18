@@ -1,6 +1,5 @@
 const colors = ['blue', 'green', 'yellow','pink', 'black', 'orange', 'gray', 'purple', 'white', 'lightblue']
 
-
 chrome.runtime.onInstalled.addListener(function() {
     colors.forEach(function (color) {
         let colorObj = {}

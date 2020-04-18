@@ -7,30 +7,26 @@
             width: 30px;
             outline: none;
         }
-        .extension-container {
+        .body-colors-container, .header-color-container {
             width: 170px;
             height: 87px
         }
     </style>
+    <script type="module" src="jquery.min.js"></script>
+
 </head>
 <body>
-<div class="extension-container">
-    <p> Change document color</p>
+<div class="body-colors-container">
+    <p>Set document body color</p>
 
-    <button class="color-button" value="blue"></button>
-    <button class="color-button" value="green"></button>
-    <button class="color-button" value="yellow"></button>
-    <button class="color-button" value="pink"></button>
-    <button class="color-button" value="black"></button>
-    <button class="color-button" value="orange"></button>
-    <button class="color-button" value="gray"></button>
-    <button class="color-button" value="purple"></button>
-    <button class="color-button" value="white"></button>
-    <button class="color-button" value="lightblue"></button>
 
 </div>
 
-<script src="popup.js"></script>
+<div class="header-color-container">
+    <p>Set color of headers</p>
+</div>
+
+<script type="module" src="popup.js"></script>
 
 </body>
 </html>

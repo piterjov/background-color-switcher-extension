@@ -2,11 +2,17 @@
     "name": "Getting Started Example",
     "version": "1.0",
     "description": "Build an Extension!",
+    "content_scripts": [
+        {
+            "js": [ "jquery.min.js" ],
+            "matches": [ "http://*/*", "https://*/*"]
+        }
+    ],
     "background": {
-        "scripts": ["background.js"],
+        "scripts": ["background.js", "/jquery.min.js"],
         "persistent": false
     },
-    "page_action": {
+    "browser_action": {
         "default_popup": "popup.html",
         "default_icon": {
             "16": "images/get_started16.png",
